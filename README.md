@@ -7,19 +7,19 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)
 
-A full-stack application that helps founders and domain investors validate an idea before building it. Enter a domain or business idea and MarshAI combines real Google Trends demand data with AI analysis to produce a structured market report in minutes.
+A full-stack **SaaS** platform for **market research** that helps founders and domain investors validate an idea before building it. Enter a domain or business idea and MarshAI combines real Google Trends demand data with AI analysis to produce a structured market research report in minutes.
 
 🚀 **Live Demo:** [Click here to view MarshAI](https://marshai-ebon.vercel.app)
 
 ## ✨ Key Features
 
-- **Validate Any Idea in Minutes:** Submit a domain or business idea and get a full market report generated in the background while you keep working.
+- **Market Research in Minutes:** Submit a domain or business idea and get a full market research report generated in the background while you keep working.
 - **Real Demand Data, Not Guesses:** Google Trends analysis shows interest over time, growth rate, rising and top related searches, and regional interest. Free reports cover 3 months of data, and Pro reports cover 12 months.
 - **Clear Opportunity Score:** Every idea gets a score from 0 to 100 and a viability rating (High, Medium or Low), with the strengths and weaknesses behind it.
 - **Know Your Audience and Competitors:** Get a profile of your target audience and their pain points, the level of competition, the key players, and where you can stand out.
 - **Find Ways to Make Money:** Get monetization strategies and concrete business ideas, each with difficulty, time to launch, estimated cost and revenue model.
 - **Launch Plan Included:** A phased go-to-market plan with quick wins, plus the main risks and clear recommendations for next steps.
-- **Free to Start, Pro When You Grow:** Free accounts get 3 validations per month with concise reports (about 500 words). Pro accounts get unlimited validations and in-depth reports (up to about 2,000 words).
+- **SaaS Subscription Model:** Free accounts get 3 validations per month with concise reports (about 500 words). Pro accounts get unlimited validations and in-depth reports (up to about 2,000 words).
 - **Simple Bank-Transfer Upgrade:** Submit a transaction ID and an invoice (image or PDF, up to 5 MB). Once the payment is approved, your account switches to Pro for one year.
 - **Report History and PDF Export:** Every report is saved in your dashboard, and you can export it as a PDF.
 - **Secure Accounts:** NextAuth with JWT sessions and bcrypt password hashing. You can change your password or delete your account and all its data at any time.
