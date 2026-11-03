@@ -4,6 +4,7 @@ import prisma from "@/lib/prisma";
 import bcrypt from "bcryptjs";
 import path from "path";
 import { unlink } from "fs/promises";
+import { del } from "@vercel/blob";
 
 export async function DELETE(req: NextRequest) {
   try {
@@ -49,9 +50,11 @@ export async function DELETE(req: NextRequest) {
     }
     await prisma.user.delete({ where: { id: userId } });
 
-    await Promise.allSettled(
+        await Promise.allSettled(
       user.paymentRequests.map((p) =>
-        unlink(path.join(process.cwd(), "public", p.invoicePath))
+        p.invoicePath.startsWith("http")
+          ? del(p.invoicePath)
+          : unlink(path.join(process.cwd(), "public", p.invoicePath))
       )
     );
 
