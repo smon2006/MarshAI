@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse, after } from "next/server";
 import { auth } from "@/lib/auth";
 import prisma from "@/lib/prisma";
 import { GoogleTrendsService } from "@/lib/services/googleTrends";
@@ -81,8 +81,7 @@ export async function POST(req: NextRequest) {
         },
     });
 
-    // Process asynchronously
-    processValidation(report.id,DomainIdea,keyword,isPro);
+       after(() => processValidation(report.id, DomainIdea, keyword, isPro));
 
     return NextResponse.json(
         {

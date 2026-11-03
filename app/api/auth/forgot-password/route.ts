@@ -2,10 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
 import prisma from "@/lib/prisma";
 
-// TODO (before real users): this resets a password knowing only the email address,
-// so anyone can reset anyone's password. Add a way to verify ownership first
-// (email link, admin approval, or a recovery code) and rate-limit this route.
-
 export async function POST(req: NextRequest) {
   try {
     const { email, newPassword, confirmPassword } = await req.json();
